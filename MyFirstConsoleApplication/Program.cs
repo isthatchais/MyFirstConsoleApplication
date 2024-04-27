@@ -28,7 +28,8 @@ namespace MyFirstConsoleApplication
             Console.WriteLine($"{Environment.NewLine}Today is: {thisDateTime:d}.");
             Console.WriteLine($"{Environment.NewLine}Number of days until Christmas: {interval.Days}.");
 
-            Console.WriteLine($"{Environment.NewLine}Get some material totals for ordering new double pain windows");
+            Console.WriteLine($"{Environment.NewLine}This next part of the program helps you find material totals for ordering a new double pain window");
+            Console.WriteLine("The information provided will help us to estamate costs for the window by giving you total glass area and total wood length");
 
             double width, height, woodLength, glassArea;
             string widthString, heightString;
