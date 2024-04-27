@@ -10,8 +10,8 @@ namespace MyFirstConsoleApplication
     {
         static void Main(string[] args)
         {
-            string myName = "Chais Chang";
-            string location = "Springville Utah USA";
+            var myName = "Chais Chang";
+            var location = "Springville Utah USA";
 
             Console.WriteLine($"Hello, My name is {myName}.");
             Console.WriteLine( "I am from " + location + "." );
@@ -27,6 +27,26 @@ namespace MyFirstConsoleApplication
 
             Console.WriteLine($"{Environment.NewLine}Today is: {thisDateTime:d}.");
             Console.WriteLine($"{Environment.NewLine}Number of days until Christmas: {interval.Days}.");
+
+            Console.WriteLine($"{Environment.NewLine}Get some material totals for ordering new double pain windows");
+
+            double width, height, woodLength, glassArea;
+            string widthString, heightString;
+
+            Console.WriteLine($"{Environment.NewLine}What is the width of the window in meeters?{Environment.NewLine}(Please give your answer in digits only ex. 2.25) ");
+            widthString = Console.ReadLine();
+            width = double.Parse(widthString);
+
+            Console.WriteLine($"{Environment.NewLine}What is the height of the window in meeters?{Environment.NewLine}(Please give your answer in digits only ex. 1.25) ");
+            heightString = Console.ReadLine();
+            height = double.Parse(heightString);
+
+            woodLength = 2 * (width + height) * 3.25;
+            glassArea = 2 * (width * height);
+            Console.WriteLine("The length of the wood is " +
+            woodLength + " feet");
+            Console.WriteLine("The area of the glass is " +
+            glassArea + " square metres");
 
             Console.Write($"{Environment.NewLine}Press any key to exit...");
             Console.ReadKey(true);
